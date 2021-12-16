@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["ES2015", "DOM"],
+    "outDir": "./dist",
+    "noEmitOnError": true,
+    "sourceMap": true
+  },
+  "include": ["./**/*.ts", ".eslintrc.cjs"],
+  "exclude": ["node_modules", "/dist"]
+}

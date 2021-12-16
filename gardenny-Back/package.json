@@ -1,0 +1,60 @@
+{
+  "name": "franny_back-final-project-202109",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start-dev": "nodemon dist/index.js -q",
+    "test": "jest --testPathIgnorePatterns /dist /server/routes/",
+    "test-dev": "jest --watchAll --collect-coverage",
+    "prepare": "husky install",
+    "build": "tsc",
+    "ts-compile": "tsc --watch"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "dist",
+      "/node_modules"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkylabCoders/Franny_Back-Final-Project-202109.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SkylabCoders/Franny_Back-Final-Project-202109/issues"
+  },
+  "homepage": "https://github.com/SkylabCoders/Franny_Back-Final-Project-202109#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/jest": "^27.0.3",
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "eslint-config-airbnb-typescript": "^16.0.0",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3"
+  }
+}
